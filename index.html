@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathematicate | Math Animations</title>
+    <link rel="stylesheet" href="./css/website.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="importmap">
+        {
+          "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.166.1/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.166.1/examples/jsm/"
+          }
+        }
+      </script>
+</head>
+<body>
+    <main class="container">
+        <section id="main_section" class="main_class">
+            <div class="nav_bg">
+                <nav class="navbar">
+                    <div class="nav_logo">
+                        <span>Mathematicate</span></div>
+                    <div class="nav_contents glow">
+                        <a class="nav_link Home" href='#main_section'><i class="fa-solid fa-house"></i>Home</a>
+                        <a class="nav_link Content" href="#video_section"><i class="fa-solid fa-calculator"></i>Content</a>
+                        <a class="nav_link Contact" href="#contact_section"><i class="fa-solid fa-envelope"></i>Contact</a>
+                    </div>
+                    <div class ="toggle-btn">
+                        <img src="./imgs/sidebar.png">
+                    </div>
+                    <div class ="dropdown">
+                        <li><a class="nav_link Home" href="#main_section"><i class="fa-solid fa-house"></i>Home</a></li>
+                        <li><a class="nav_link Content" href="#video_section"><i class="fa-solid fa-calculator"></i>Content</a></li>
+                        <li><a class="nav_link Contact" href="#contact_section"><i class="fa-solid fa-envelope"></i>Contact</a></li>
+                    </div>
+                </nav>
+            </div>
+            <div class="content_wrap">
+                <div class="text_wrap">
+                    <h1 class="title title__gradient gsap__content__item">
+                        <span class="title--small">Math can be hard to grasp.</span>
+                        <div class="header_text">
+                            <span class=>At Mathematicate, we take a <span class="visual--accent">visual</span> approach to teaching infamous math theorems and topics through <span class="step-by-step--accent">step-by-step</span> animated lessons.</span>
+                        </div>
+                    </h1>
+                </div>
+                <div class="ThreeDContainer"></div>    
+            </div>  
+        </section>
+    </main>
+    <section class = "video">
+        <div id= "video_section">
+            <div class = "slider-container">
+                <div class = "slider" style="--quantity: 8">
+                    <div class = "item" style="--position: 1">
+                        <a href = "https://www.youtube.com/watch?v=0wtpf7yQhQY" target="_blank">
+                            <img src = "/imgs/rose3.png">
+                        </a>
+                    </div>
+                    <div class = "item" style="--position: 2">
+                        <a href="https://www.youtube.com/watch?v=XUBscz6diT8" target="_blank">
+                            <img src = "/imgs/eipi.png" alt="">
+                        </a>
+                    </div>
+                    <div class = "item" style="--position: 3">
+                        <a href = "https://www.youtube.com/watch?v=jqrxkxj-mWQ&t=41s" target="_blank">
+                            <img src = "/imgs/pythag.png" alt="">
+                        </a>
+                    </div>
+                    <div class = "item" style="--position: 4">
+                        <a href = "https://www.youtube.com/watch?v=x1RgajwslOU&t=1s" tagret="_blank">
+                            <img src = "/imgs/mclaurin.png" alt="">
+                        </a>
+                    </div>
+                    <div class = "item" style="--position: 5">
+                        <a href="https://www.youtube.com/watch?v=zNsesX4BmdY" target="_blank">
+                            <img src = "/imgs/sum_n.png" alt="">
+                        </a>
+                    </div>
+                    <div class = "item" style="--position: 6">
+                        <a href = "https://www.youtube.com/watch?v=1vPc7dLUFdY" target="blank">
+                            <img src = "/imgs/n_squared.png" alt="">
+                        </a>
+                    </div>
+                    <div class = "item" style="--position: 7">
+                        <a href = "https://www.youtube.com/watch?v=vwvT2JUNpXc" target="_blank">
+                            <img src = "/imgs/chainrule.png" alt="">
+                        </a>
+                    </div>
+                    <div class = "item" style="--position: 8">
+                        <a href = "https://www.youtube.com/watch?v=JYR3jF1sZVo" target="_blank">
+                            <img src = "/imgs/proj3.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class = "content">
+                    <h2>Discover in depth animations</h2>
+                    <h5>Click one of the following to view</h5> 
+            </div>
+            <div class ="ThreeDContainer2"></div>
+        </div>
+    </section>
+    <section class = contact>
+        <form id ="contact_section">
+            <div class="row">
+                    <h1 class = "contact_title">Contact</h1>
+            </div>
+            <div class="row">
+                    <h4 style="text-align:center">For video recommendations, feedback, or freelancing</h4>
+            </div>
+            <div class="icon">
+                <i class="fa fa-envelope" aria-hidden="true"><a href="#"></a></i>
+            </div>
+            <div class="row input-container2">
+                <div class="name row">
+                    <div class="styled-input wide">
+                        <input type="text" id="nameInput" required oninvalid="this.setCustomValidity('Please enter your name')" oninput="this.setCustomValidity('')">
+                        <label for="nameInput">Name</label> 
+                    </div>
+                </div>
+                <div class="email row">
+                    <div class="styled-input wide">
+                        <input type="email" id="emailInput" required oninvalid="this.setCustomValidity('Please enter your email')" oninput="this.setCustomValidity('')">
+                        <label for="emailInput">Email</label> 
+                    </div>
+                </div>
+                <div class="subject row">
+                    <div class="styled-input wide">
+                        <input type="text" id="subjectInput" required oninvalid="this.setCustomValidity('Please enter your subject')" oninput="this.setCustomValidity('')">
+                        <label for="subjectInput">Subject</label>
+                    </div>
+                </div>
+                
+                <div class="message row">
+                    <div class="styled-input wide">
+                        <textarea id="messageInput" required oninvalid="this.setCustomValidity('Please enter your message')" oninput="this.setCustomValidity('')"></textarea>
+                        <label for="messageInput">Message</label>
+                    </div>
+                </div>
+                <div class= "submit-button"><button type="submit">Send Message</button></div>
+            </div>
+        </form>
+    </section>
+    </body>
+    <script type="module" src="./js/main.mjs"></script>
+    <script type="module" src="./js/scroll_fade.js"></script>
+    <script type="module" src="./js/navbar_toggle.js"></script>
+    <script type="module" src="./js/contact_button.js"></script>
+</body>
+</html>
