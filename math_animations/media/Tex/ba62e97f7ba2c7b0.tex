@@ -1,0 +1,9 @@
+\documentclass[preview]{standalone}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\begin{document}
+\begin{align*}
+&= \int \frac{(3\tan\theta)^3(3\sec^2\theta)}{\sqrt{(3\tan\theta)^2+9}} \, d\theta \\ &= \int \frac{81\tan^3\theta\sec^2\theta}{\sqrt{9\tan^2\theta+9}} \, d\theta \\ &= 81\int \frac{\tan^3\theta\sec^2\theta}{\sqrt{9(\tan^2\theta+1)}} \, d\theta \\ &= \frac{81}{3}\int \frac{\tan^3\theta\sec^2\theta}{\sqrt{\sec^2\theta}} \, d\theta \\ &= 27\int \tan^3\theta\sec\theta \, d\theta \\ &= 27\int (\sec^2\theta-1)\sec\theta\tan\theta \, d\theta \\ &=27\int u^2-1 \, du \\ &=27(\frac{x^3}{3}-u+C)
+\end{align*}
+\end{document}
