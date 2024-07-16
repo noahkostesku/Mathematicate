@@ -5,6 +5,6 @@ The following animations made in this project were made using manim (python libr
 For installation purposes visit the manim community repo:
 https://github.com/3b1b/manim
 
-https://noahkostesku.github.io/Mathimaticate.github.io/
+
 
 
