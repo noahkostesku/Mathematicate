@@ -97,7 +97,6 @@ a {
     border-radius:15px;
     position: fixed;
     z-index:10;
-    flex-wrap: wrap; 
 }
 .nav_logo {
     font-size: 1.5rem;
@@ -119,7 +118,8 @@ a {
     gap:9px;
     margin-right: 40px;
     font-size:0.8rem;
-    position: relative;
+    position: fixed;
+    right: 0.1%;
 }
 
 .nav_contents {
@@ -208,7 +208,7 @@ a {
 
 .toggle-btn img {
     width: 40%;
-    height: 40px;;
+    height: 40px;
     margin-right:60px;
 }
 
@@ -219,9 +219,10 @@ a {
 
 /* Dropdown navbar */
 
+
 .dropdown {
     display: none;
-    margin-right:60px;
+    margin-left:60px;
     position: absolute;
     right: 1rem;
     top: 60px;
@@ -247,6 +248,15 @@ a {
    align-items: center;
    justify-content: center; 
 }
+
+/*Safari specific code for bug on navbar*/
+
+_::-webkit-full-page-media, _:future, :root .safari_only .toggle-btn img  {
+    width: 10%;
+    margin-left: 75%;
+    float: none;
+}
+
 
 @media (min-width: 768px){
     .dropdown li {
@@ -514,11 +524,11 @@ h1 {
     background: linear-gradient(100deg,rgb(235, 40, 73), rgb(239, 43, 180), rgb(189, 35, 203),rgb(124, 5, 208),rgb(89, 28, 209));
     background-size: 400%;
     z-index: -1;
-    animation: contact_glow 20s linear infinite;
+    animation: glow 20s linear infinite;
     filter: blur(10px);
 }
 
-@keyframes contact_glow {
+@keyframes glow {
     0% {
         background-position: 0 0;
     }
@@ -538,6 +548,11 @@ h4 {
     line-height: 1.5;
 }
 
+_::-webkit-full-page-media, _:future, :root .safari_only2 h4  {
+    font-size:3vw
+}
+
+
 @media (max-width: 550px){
     h1 {
         font-size: 30px;
@@ -545,6 +560,12 @@ h4 {
     h4 {
         font-size: 15px;
         margin: 0 10%;  
+    }
+}
+
+@media (max-width: 500px){
+    .safari_only2 .h5{
+        font-size: 100px;
     }
 }
 
@@ -569,7 +590,6 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
     color: #999;
     padding: 1.3rem 1rem 1rem 1rem;
     position: absolute;
-    /* top: 10px; */
     top: 10px;
     left: 0;
     -webkit-transition: all 0.25s ease;
@@ -656,7 +676,7 @@ textarea {
 .submit-button button{
     font-family: 'Alata', sans-serif, 'arial';
     font-weight: 600;
-    font-size: 15px;
+    font-size: 2vw;
     color: white;
     background-color: transparent;
     border: transparent;
